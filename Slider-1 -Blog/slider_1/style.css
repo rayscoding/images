@@ -1,0 +1,64 @@
+body {
+  background: #f7f9fc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.slider {
+  max-width: 800px;
+  margin: auto;
+}
+
+.slider-main {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main-img {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  height: auto;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+.thumbnail-row {
+  gap: 10px;
+}
+
+.thumb {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+.thumb:hover,
+.thumb.active {
+  border: 2px solid #007bff;
+}
